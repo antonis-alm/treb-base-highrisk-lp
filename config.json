@@ -1,0 +1,24 @@
+{
+    "protocol": "uniswap_v3",
+    "pool": "WETH/USDC/3000",
+    "base_token": "WETH",
+    "quote_token": "USDC",
+    "entry_dip_min_pct": 0.01,
+    "entry_dip_max_pct": 0.02,
+    "target_allocation_pct": 0.015,
+    "max_allocation_pct": 0.02,
+    "stop_loss_pct": 0.30,
+    "tp_levels_pct": [0.25, 0.50, 1.00],
+    "tp_reopen_allocations_pct": [0.01, 0.005, 0.0],
+    "range_width_pct": 0.10,
+    "rebalance_threshold_pct": 0.85,
+    "max_slippage": 0.01,
+    "ohlcv_timeframe": "15m",
+    "ohlcv_lookback": 96,
+    "min_quote_reserve_usd": 50,
+    "anvil_funding": {
+        "ETH": 2,
+        "WETH": 1,
+        "USDC": 10000
+    }
+}

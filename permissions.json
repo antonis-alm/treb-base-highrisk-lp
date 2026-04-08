@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "chain": "base",
+  "strategy": "treb_base_highrisk_lp",
+  "generated_at": "2026-04-08T09:38:18.882653+00:00",
+  "warnings": [
+    "Compilation failed for uniswap_v3/LP_CLOSE on base: Could not query liquidity for position #1. Ensure rpc_url is provided to IntentCompiler. \u2014 This protocol requires on-chain lookups for full permission discovery. Set ALCHEMY_API_KEY in your .env or pass --rpc-url."
+  ],
+  "permissions": [
+    {
+      "target": "0x03a520b32c04bf3beef7beb72e919cf822ed34f1",
+      "label": "Uniswap V3 (lp_mint)",
+      "operation": 0,
+      "send_allowed": false,
+      "function_selectors": [
+        {
+          "selector": "0x88316456",
+          "label": "mint(MintParams)"
+        }
+      ]
+    },
+    {
+      "target": "0x2626664c2603336e57b271c5c0b26f421741e481",
+      "label": "Uniswap V3 (swap)",
+      "operation": 0,
+      "send_allowed": false,
+      "function_selectors": [
+        {
+          "selector": "0x04e45aaf",
+          "label": "exactInputSingle(ExactInputSingleParams)"
+        }
+      ]
+    },
+    {
+      "target": "0x38869bf66a61cf6bdb996a6ae40d5853fd43b526",
+      "label": "MultiSend (Safe)",
+      "operation": 1,
+      "send_allowed": false,
+      "function_selectors": [
+        {
+          "selector": "0x8d80ff0a",
+          "label": "multiSend(bytes)"
+        }
+      ]
+    },
+    {
+      "target": "0x4200000000000000000000000000000000000006",
+      "label": "ERC-20: WETH",
+      "operation": 0,
+      "send_allowed": false,
+      "function_selectors": [
+        {
+          "selector": "0x095ea7b3",
+          "label": "approve(address,uint256)"
+        }
+      ]
+    },
+    {
+      "target": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "label": "ERC-20 (0x8335...2913)",
+      "operation": 0,
+      "send_allowed": false,
+      "function_selectors": [
+        {
+          "selector": "0x095ea7b3",
+          "label": "approve(address,uint256)"
+        }
+      ]
+    }
+  ]
+}
